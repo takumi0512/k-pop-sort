@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Noto Sans JP',"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #e5e5e5;
+    height: 100vh;
+
+    background-image:
+    repeating-linear-gradient(to bottom,
+      transparent 25px,
+      rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+      transparent 27px,  transparent 51px, 
+      rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+      transparent 53px,  transparent 77px, 
+      rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+      transparent 79px,  transparent 103px, 
+      rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+      transparent 105px,  transparent 129px, 
+      rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px),
+ 
+    repeating-linear-gradient(to right,
+      transparent 25px,
+      rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+      transparent 27px,  transparent 51px, 
+      rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+      transparent 53px,  transparent 77px, 
+      rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+      transparent 79px,  transparent 103px, 
+      rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+      transparent 105px,  transparent 129px, 
+      rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px);
+}
+
+
+.header{
+    background-color: #ed86b3;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 >a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.header h1>a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.menu{
+    display: flex;
+}
+
+.item{
+    padding: 5px;
+}
+.item a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.item a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        padding: 0 5px;
+    }
+    .header h1{
+        font-size: 18px;
+    }
+    .item{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+/*section1*/
+
+
+section h1{
+    text-align: center;
+    font-weight: normal;
+    margin: 50px;
+}
+.title{
+    border-bottom: #ed86b3 3px double;
+}
+
+
+.box{
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    border: #ed86b3 2px solid;
+}
+
+
+.member{
+    display: flex;
+}
+.color{
+    background-color: #e5e5e5;
+}
+
+.rank{
+    width: 20%;
+    padding: 5px 10px;
+    text-align: center;
+}
+.name{
+    width: 50%;
+    padding: 5px 10px;
+    text-align: center;
+}
+.group{
+    width: 30%;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.top{
+    background-color: #ed86b3;
+    color: #fff;
+    font-size: 25px;
+}
+
+@media screen and (max-width:768px){
+    section h1{
+        font-size: 25px;
+    }
+    .box{
+        width: 90%;
+        font-size: 17px;
+    }
+    .top{
+        font-size: 20px;
+    }}
+
+
+
+
+
+
+
+
+
+
+
+
+/*share*/
+.share{
+    text-align: center;
+    margin: 50px;
+}
+
+.share .string{
+    font-size: 25px;
+    color: #ed86b3;
+}
+.icon{
+    padding: 15px;
+}
+.share img{
+    scale: 80%;
+    filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.8));
+    transition: filter .3s;
+}
+.share img:hover{
+    filter: drop-shadow(0px 0px 0px #333);
+}
+
+@media screen and (max-width:768px){
+    .share .string{
+        font-size: 20px;
+    }
+}

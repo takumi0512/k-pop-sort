@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort</title>
+    <meta name="description" content="text">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sanitize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+
+    <header class="header">
+        <h1>
+            <a href="">K-POP girl's group ソート</a>
+        </h1>
+        <nav>
+            <ul class="menu">
+                <li class="item">
+                    <a href="">ここに</a>
+                </li>
+                <li class="item">
+                    <a href="">何を</a>
+                </li>
+                <li class="item">
+                    <a href="">作ろう</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><label for="item1"><img src="./image/twice3.jpeg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item2"><img src="./image/ive_top4.webp" alt=""></label></div>
+            <div class="swiper-slide"><label for="item3"><img src="./image/kep1erのコピー.png" alt=""></label></div>
+            <div class="swiper-slide"><label for="item4"><img src="./image/aespa.webp" alt=""></label></div>
+            <div class="swiper-slide"><label for="item5"><img src="./image/blackpink.jpg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item6"><img src="./image/fromis9.jpeg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item7"><img src="./image/stayc.jpeg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item8"><img src="./image/wjsn.jpeg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item9"><img src="./image/itzy.jpeg" alt=""></label></div>
+        </div>   
+        <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <section class="section1">
+        <h1>K-POP girl's group ソート</h1>
+        <p><span>1.ソートしたいグループを選んでください</span></p>
+        <p><span>2.ソート開始を押すとチェックを付けた<br class="br">グループのメンバーソートを開始します</span></p>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="section2" id="section2">
+
+        <h1>GROUP LIST</h1>
+
+        <div class="subtitle">
+            <div class="countparent">
+                <strong id="count">0人選択中</strong>
+            </div>
+            <div class="allbox">
+                <label for="all" class="all">
+                    <input id="all" type="checkbox">
+                    <div class="string">全グループ選択</div>
+                </label>
+            </div>
+        </div>
+
+
+
+        <div class="checkbox">
+
+            <!---
+            <div class="parentsbox">
+                <label for="parents1" class="itembox">
+                    <input id="parents1" type="checkbox" class="parents el" value="0">
+                    <div class="stringparents">事務所名</div>
+                </label>
+            -->
+                <div class="child">
+                    <label for="item1" class="itembox">
+                        <input id="item1" type="checkbox" class="child1 el" value="9">
+                        <div class="stringchild">TWICE</div>
+                    </label>
+                </div>
+                <div class="child">
+                    <label for="item2" class="itembox">
+                        <input id="item2" type="checkbox" class="child1 el" value="6">
+                        <div class="stringchild">IVE</div>
+                    </label>
+                </div>
+                <div class="child">
+                    <label for="item3" class="itembox">
+                        <input id="item3" type="checkbox" class="child1 el" value="9">
+                        <class class="stringchild">Kep1er</class>
+                    </label>
+                </div>
+            
+            <!---
+            <div class="parentsbox">
+                <label for="parents2" class="itembox">
+                    <input id="parents2" type="checkbox" class="parents el" value="0">
+                    <div class="stringparents">事務所名</div>
+                </label>
+            -->
+                <div class="child">
+                    <label for="item4" class="itembox">
+                        <input id="item4" type="checkbox" class="child2 el" value="4">
+                        <div class="stringchild">aespa</div>
+                    </label>
+                </div>
+                <div class="child">
+                    <label for="item5" class="itembox">
+                        <input id="item5" type="checkbox" class="child2 el" value="4">
+                        <div class="stringchild">BLACKPINK</div>
+                    </label>
+                </div>
+                <div class="child">
+                    <label for="item6" class="itembox">
+                        <input id="item6" type="checkbox" class="child2 el" value="8">
+                        <div class="stringchild">fromis_9</div>
+                    </label>
+                </div>
+        
+            
+            <!----
+            <div class="parentsbox">
+                <label for="parents3" class="itembox">
+                    <input id="parents3" type="checkbox" class="parents el" value="0">
+                    <div class="stringparents">事務所名</div>
+                </label>
+            -->
+            
+                <div class="child">
+                    <label for="item7" class="itembox">
+                        <input id="item7" type="checkbox" class="child3 el" value="6">
+                        <div class="stringchild">STAYC</div>
+                    </label>
+                </div>
+                <div class="child">
+                    <label for="item8" class="itembox">
+                        <input id="item8" type="checkbox" class="child3 el" value="13">
+                        <div class="stringchild">WJSN</div>
+                    </label>
+                </div>
+                <div class="child">
+                    <label for="item9" class="itembox">
+                        <input id="item9" type="checkbox" class="child3 el" value="5">
+                        <div class="stringchild">ITZY</div>
+                    </label>
+                </div>
+            
+            
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <div class="swiper subSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><label for="item1"><img src="./image/twice3.jpeg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item2"><img src="./image/ive_top4.webp" alt=""></label></div>
+            <div class="swiper-slide"><label for="item3"><img src="./image/kep1erのコピー.png" alt=""></label></div>
+            <div class="swiper-slide"><label for="item4"><img src="./image/aespa.webp" alt=""></label></div>
+            <div class="swiper-slide"><label for="item5"><img src="./image/blackpink.jpg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item6"><img src="./image/fromis9.jpeg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item7"><img src="./image/stayc.jpeg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item8"><img src="./image/wjsn.jpeg" alt=""></label></div>
+            <div class="swiper-slide"><label for="item9"><img src="./image/itzy.jpeg" alt=""></label></div>
+        </div>   
+    </div>
+
+
+
+
+
+    <div id="button">
+        <input type="button" value="ソート開始">
+    </div>
+
+
+
+
+
+
+    <footer>
+        copyright
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

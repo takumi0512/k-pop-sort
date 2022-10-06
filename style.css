@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Noto Sans JP',"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #e5e5e5;
+
+    background-image:
+    repeating-linear-gradient(to bottom,
+      transparent 25px,
+      rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+      transparent 27px,  transparent 51px, 
+      rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+      transparent 53px,  transparent 77px, 
+      rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+      transparent 79px,  transparent 103px, 
+      rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+      transparent 105px,  transparent 129px, 
+      rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px),
+ 
+    repeating-linear-gradient(to right,
+      transparent 25px,
+      rgba(0, 0, 0, 0.04) 26px,  rgba(0, 0, 0, 0.04) 26px,
+      transparent 27px,  transparent 51px, 
+      rgba(0, 0, 0, 0.04) 52px,  rgba(0, 0, 0, 0.04) 52px,
+      transparent 53px,  transparent 77px, 
+      rgba(0, 0, 0, 0.04) 78px,  rgba(0, 0, 0, 0.04) 78px,
+      transparent 79px,  transparent 103px, 
+      rgba(0, 0, 0, 0.04) 104px,  rgba(0, 0, 0, 0.04) 104px,
+      transparent 105px,  transparent 129px, 
+      rgba(0, 0, 0, 0.04) 130px,  rgba(0, 0, 0, 0.04) 130px);
+}
+
+
+
+
+
+
+/*header*/
+
+.header{
+    background-color: #ed86b3;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 >a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.header h1>a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.menu{
+    display: flex;
+}
+
+.item{
+    padding: 5px;
+}
+.item a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+.item a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        padding: 0 5px;
+    }
+    .header h1{
+        font-size: 18px;
+    }
+    .item{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*main*/
+
+.swiper{
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.swiper-wrapper {
+    /* wrapperのサイズを調整 */
+    width: 100%;
+    height:auto;
+  }
+  
+  .swiper-slide img {
+    /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+    color: #ffffff;
+    height: auto;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width:768px){
+    .swiper{
+        padding:10px 0;
+    }
+  }
+
+.swiper-pagination-bullet{
+    background-color: #ed86b3;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-color:#ed86b3;
+}
+@media screen and (max-width:768px){
+    .swiper-pagination-bullet{
+        background-color: #fff;
+    }
+}
+
+/*sub*/
+
+.subSwiper{
+    padding: 20px 0;
+    margin: 30px 0 0 0;
+    background-color: #fff;
+}
+  
+@media screen and (max-width:768px) {
+    .subSwiper{
+        padding: 5px 0;
+    }
+}
+
+
+
+
+
+
+
+  /*section1*/
+  .section1{
+    text-align: center;
+    padding: 20px 0 30px 0;
+  }
+  .section1 h1{
+    font-weight: normal;
+  }
+  .section1 span{
+    border-bottom: #333 solid 1px;
+  }
+
+  @media screen and (min-width:768px){
+    .br{display: none;}
+  }
+  @media screen and (max-width:768px){
+    .section1{
+        padding: 10px 0 15px 0;
+        font-size: 13px;
+    }
+    .section1 h1{
+        font-size: 25px;
+    }
+  }
+
+
+
+
+
+
+
+  /*section2*/
+
+  .section2{
+    margin: auto;
+    width: 70%;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 20px;
+  }
+
+  .section2 >h1{
+    margin: 0;
+    background-color: #ed86b3;
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+
+  .subtitle{
+    padding: 15px;
+    border-bottom: 1.5px dashed #333;
+  }
+
+.countparent{
+    text-align: center;
+}
+#count{
+    font-size: 35px;
+    font-weight: normal;
+    border-bottom: 1.5px solid #333;
+    border-top: 1.5px solid #333;
+}
+.allbox{
+    padding: 15px 0 0 0;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.string{
+    padding: 0 25px;
+    font-size: 25px;
+}
+
+.checkbox{
+    padding: 20px 20px 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+@media screen and (max-width:768px){
+    .checkbox{
+        padding: 15px;
+        
+    }
+   
+    .section2{
+        font-size: 20px;
+    }
+    .section2>h1{
+        font-size: 35px;
+    }
+    #count{
+        font-size: 30px;
+    }
+    .string{
+        font-size:20px;
+        padding: 0 15px;
+    }
+    
+}
+
+
+/*
+.parentsbox{
+    padding: 10px;
+}
+.stringparents{
+    padding: 0 20px;
+}
+.child{
+    padding: 0 30px;
+}*/
+
+.child{
+    width: 25%;
+}
+.itembox{
+    display: flex;
+    align-items: center;
+}
+.stringchild{
+    padding: 0 0 0 20px;
+}
+
+@media screen and (max-width:768px){
+    /*
+    .parentsbox{
+        padding:5px 10px
+    }
+    .stringparents{
+        padding: 0 0 0 12px;
+    }*/
+    .child{
+        width: 100%;
+        
+    }
+    .stringchild{
+        padding: 0 0 0 12px;
+    }
+    .itembox{
+        padding: 2px;
+        padding-left: 25%;
+    }
+}
+
+
+  .section2 input{
+    transform: scale(2);
+    accent-color: #ed86b3;
+  }
+
+@media screen and (max-width:768px){
+    .section2 input{
+        transform: scale(1.5);
+    }
+}
+
+
+
+
+
+
+
+
+  /*button*/
+
+#button{
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    z-index: 100;
+  }
+
+#button input{
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #ed86b3;
+    border-radius: 30px;
+    box-shadow: 8px 8px  #bbb;
+    transition: box-shadow .25s;
+    border: 0;
+}
+#button input:hover{
+    box-shadow: 0 0 0 #bbb;
+}
+
+@media screen and (max-width:768px){
+    #button input{
+        font-size: 25px;
+        box-shadow: 5px 5px #bbb;
+    }
+}
+
+
+
+  /*footer*/
+  footer{
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+  }
