@@ -125,6 +125,12 @@ body{
     }
 }
 
+@media screen and (min-width:768px){
+    .br-st{
+        display: none;
+    }
+}
+
 
 
 
@@ -182,7 +188,11 @@ img{
     font-weight: bold;
 }
 
-
+@media screen and (max-width:768px){
+    .name{
+        font-size: 20px;
+    }
+}
 
 
 /*footer*/

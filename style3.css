@@ -147,9 +147,16 @@ section h1{
         width: 90%;
         font-size: 17px;
     }
+    .group{
+        font-size: 15px;
+    }
     .top{
         font-size: 20px;
-    }}
+    }
+    .top .group{
+        font-size: 20px;
+    }
+}
 
 
 

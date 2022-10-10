@@ -411,7 +411,7 @@ draw.addEventListener("click",()=>{
 
     //右の要素の引き分けをチェック
 
-    while(li<leftArr.length){
+    while(ri<rightArr.length){
         localResult.push(rightArr[ri]);
         console.log(checkDraw[rightArr[ri]]);
 
@@ -643,6 +643,7 @@ let transition =() =>{
     //html3に送るデータ
 
     sessionStorage.setItem("result",globalResult)
+    console.log(globalResult);
 
     draw = []
     for (let i of globalResult){
@@ -653,16 +654,19 @@ let transition =() =>{
         }
     }
     sessionStorage.setItem("checkDraw",draw)
-
+    console.log(draw);
 
     group = []
     for(let i of globalResult){
         group.push(groupList[sortArrGroup[i]])
     }
     sessionStorage.setItem("group",group)
+    console.log(group);
 
     location.href = "./index3.html"
 }
+
+
 
 
 
@@ -754,11 +758,11 @@ let touch = (box) =>{
     box.addEventListener("touchstart",()=>{
         box.style.backgroundColor = "#ed86b3"
         box.style.transition = "0.1s"
-    })
+    },{passive: true})
     box.addEventListener("touchend",()=>{
         box.style.backgroundColor = "#fff"
         box.style.transition = "0.1s"
-    })
+    },{passive: true})
 }
 touch(rightbox);
 touch(leftbox);

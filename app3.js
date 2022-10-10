@@ -40,6 +40,7 @@ for(let i of group){
         groupName.push(groupList[i])
     }
 }
+groupName.reverse()
 
 
 //引き分け取得
